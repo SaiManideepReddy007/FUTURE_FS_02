@@ -11,7 +11,9 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://future-fs-02-iota-three.vercel.app/']
+}))
 app.use(express.json());
 
 app.use('/api/leads', require('./routes/leadRoutes'));
