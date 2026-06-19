@@ -33,7 +33,8 @@ export default function AdminLogin() {
         <form onSubmit={handleSubmit}>
           <div style={s.field}>
             <label style={s.label}>Email</label>
-<input style={s.input} type="email" name="email" value={form.email} onChange={handleChange} required placeholder="Enter Username" />          </div>
+            <input style={s.input} type="email" name="email" value={form.email} onChange={handleChange} required placeholder="Enter Username" />
+          </div>
           <div style={s.field}>
             <label style={s.label}>Password</label>
             <input style={s.input} type="password" name="password" value={form.password} onChange={handleChange} required placeholder="••••••••" />
